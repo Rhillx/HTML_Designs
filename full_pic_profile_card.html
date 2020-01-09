@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac9ab7aca2.js" crossorigin="anonymous"></script>
+    <title>Profile Card</title>
+</head>
+<body>
+    <div class="card">
+        
+        <img src="/images/portrait-of-young-woman-678783.jpg" alt="">
+        
+        <div class="main-content">
+            <h4>Jane Doe</h4>
+            <h5>Marketing Director</h5>
+        </div>
+
+        <div class="social-links">
+           
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+           
+        </div>
+    </div>
+    
+
+
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #edf4;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        .card{
+            width: 400px;
+            height: 600px;
+            background-color: #45edfc;
+            margin-top: 30px;
+            position: relative;
+            border-radius: 10px;
+            
+        }
+        .card:hover{
+
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition-duration: 2s;
+            
+            
+           
+        }
+        img:active{
+            width: 250px;
+            height: 250px;
+            border-radius: 100%;
+            top: 10px;
+            left: 75px;
+        }
+        .main-content{
+            position: absolute;
+            bottom: 200px;
+            letter-spacing: 1.2px;
+        }
+        .main-content h4{
+            font-size: 30px;
+            background-color: #fff;
+            width: 250px;
+            padding-left: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .main-content h5{
+            font-size: 16px;
+            background-color: #fff;
+             padding-left: 10px;
+             border-top-right-radius: 20px;
+             border-bottom-right-radius: 20px;
+             text-align: center;
+        }
+        .social-links{
+            position: absolute;
+            bottom: 50px;
+            font-size: 40px;
+            color: #fff;
+           
+        }
+        i{
+           margin-right: 10px; 
+           padding: 10px;
+        }
+
+    </style>
+</body>
+</html>
